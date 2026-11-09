@@ -35,4 +35,3 @@ def fetch_all():
     con.close()
     cols = ["date","stock","side","price","qty","gross","commission","net"]
     return [dict(zip(cols, r)) for r in rows]
-
